@@ -9,11 +9,11 @@ npm ci
 npm run dev
 ```
 
-## Publish with GitHub Pages from a branch
+## Publish to the `gh-pages` branch
 
-1. Run `npm run build:pages`. Vite generates the site in `docs/`.
-2. Commit and push the updated `docs/` folder to `main`.
+1. Run `npm run build` to generate the site in `dist/`.
+2. Run `npm run deploy` to publish the contents of `dist/` to the `gh-pages` branch.
 3. In the repository, open **Settings → Pages**.
-4. Choose **Deploy from a branch**, select `main` and `/docs`, then save.
+4. Choose **Deploy from a branch**, select `gh-pages` and `/(root)`, then save.
 
-The site uses `/abeerperfumes/` as its production base path for the project Pages URL.
+The site uses `/abeerperfumes/` as its base path for the project Pages URL.
