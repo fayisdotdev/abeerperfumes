@@ -165,7 +165,7 @@ function App() {
               data-alt="A real Abeer perfume bottle photographed in soft natural light"
             >
               <img
-                src="/images/fragrance-reference.jpg"
+                src={`${import.meta.env.BASE_URL}images/fragrance-reference.jpg`}
                 width="1920"
                 height="1440"
                 alt="An unbranded ribbed glass perfume bottle with a dark cap on a pale shelf"
