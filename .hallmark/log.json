@@ -1,0 +1,31 @@
+[
+ {
+  "date": "2026-11-01",
+  "mode": "build",
+  "shape": "Narrative Workflow",
+  "theme": "grid",
+  "axes": "light/grotesk-sans/cool",
+  "hero": "Banner",
+  "nav": "masthead",
+  "footer": "index columns",
+  "imagery": "Three.js perfume bottle and one credited library photograph",
+  "photos": [
+   "Perfume glass bottle.jpg"
+  ],
+  "entry": "Left-aligned fragrance message with collection and contact actions",
+  "fingerprint": "grid|narrative-workflow|banner|masthead|blue-white|animated-bottle",
+  "sections": [
+   "hero",
+   "fragrance families",
+   "fragrance story",
+   "retail and wholesale",
+   "contact",
+   "footer"
+  ],
+  "signature": "Animated Three.js perfume bottle",
+  "swaps": [
+   "Replaced missing product prices, process, and delivery facts with scent families and retail or wholesale enquiry paths"
+  ],
+  "prompt": "Create a React landing page for Abeer Perfumes in Kerala, with dark blue and white branding, retail and wholesale, collection browsing, and contact"
+ }
+]
