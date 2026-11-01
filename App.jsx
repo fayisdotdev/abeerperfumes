@@ -206,10 +206,10 @@ function App() {
                 {activeFamily ? (
                   <>
                     <strong>{activeFamily.name}</strong>: {activeFamily.descriptor} Showing
-                    matching prototype scents.
+                    matching scents.
                   </>
                 ) : (
-                  <>Showing all six prototype fragrance concepts.</>
+                  <>Showing all six fragrance concepts.</>
                 )}
               </p>
               <a
