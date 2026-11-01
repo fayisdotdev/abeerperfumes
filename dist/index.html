@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f7f8fb" />
+    <meta
+      name="description"
+      content="Explore Abeer Perfumes, a Kerala fragrance shop for retail and wholesale enquiries."
+    />
+    <meta
+      name="photo-credit"
+      content="Photographs: Santeri Viinamäki (CC BY-SA 4.0, Wikimedia Commons)"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <style>
+      /* Hallmark · shape: Narrative Workflow · genre: editorial · theme: Grid · job: buy
+       * pre-emit critique: P4 H5 E4 S5 R4 V4 · weakest: E, added a static scene fallback and reduced-motion support */
+      html,
+      body {
+        overflow-x: clip;
+      }
+
+      :focus-visible {
+        outline: 2px solid var(--color-focus);
+        outline-offset: 2px;
+      }
+
+      :active {
+        transform: translateY(1px);
+      }
+    </style>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Radio+Canada:wght@400;500;700&family=Radio+Canada+Big:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <title>Abeer Perfumes: Fragrance, found your way</title>
+    <script type="module" crossorigin src="/assets/index-BS_0AheS.js"></script>
+    <link rel="stylesheet" crossorigin href="/assets/index-nyoAnbcM.css">
+  </head>
+  <body>
+    <div id="root"></div>
+    <main class="static-fallback" data-credits>
+      <h1>Abeer Perfumes</h1>
+      <p>Explore fragrances for retail and wholesale in Kerala.</p>
+      <p>
+        Photographs:
+        <a href="https://commons.wikimedia.org/wiki/File:Perfume_glass_bottle.jpg">
+          Santeri Viinamäki
+        </a>
+        (CC BY-SA 4.0, Wikimedia Commons)
+      </p>
+    </main>
+    <script>
+      window.hallmarkSlots = (slots) => {
+        for (const [name, value] of Object.entries(slots)) {
+          const slot = document.querySelector(`[data-slot="${name}"]`);
+          if (!slot) continue;
+          const image = new Image();
+          image.src = typeof value === "string" ? value : value.src;
+          image.alt = (typeof value === "object" && value.alt) || slot.dataset.alt || "";
+          slot.querySelectorAll(":scope > img").forEach((existing) => existing.remove());
+          slot.prepend(image);
+        }
+      };
+    </script>
+  </body>
+</html>
