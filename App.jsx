@@ -17,6 +17,62 @@ const fragranceFamilies = [
     descriptor: "A clear, easygoing feel.",
     index: "03",
   },
+  {
+    name: "Spiced",
+    descriptor: "A little warmth with a lively edge.",
+    index: "04",
+  },
+];
+
+const products = [
+  {
+    name: "Abeer Royal Oud De Malabar",
+    family: "Oud & woods",
+    format: "100 ml Extrait de Parfum",
+    price: 5499,
+    image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=800&q=80",
+    notes: ["Wayanad cardamom, saffron", "Palakkad jasmine, rose", "Assam oud, sandalwood"],
+  },
+  {
+    name: "Mulla Nights",
+    family: "Florals",
+    format: "100 ml Extrait de Parfum",
+    price: 3899,
+    image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=800&q=80",
+    notes: ["Green tea, bergamot", "Night jasmine, tuberose", "White musk, sandalwood"],
+  },
+  {
+    name: "Ramacham Coastal Breeze",
+    family: "Fresh",
+    format: "100 ml Extrait de Parfum",
+    price: 3499,
+    image: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=800&q=80",
+    notes: ["Sea salt, pink grapefruit", "Ramacham vetiver, neroli", "Cedarwood, amber"],
+  },
+  {
+    name: "Wayanad Spice Route",
+    family: "Spiced",
+    format: "100 ml Extrait de Parfum",
+    price: 4299,
+    image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=800&q=80",
+    notes: ["Black pepper, nutmeg", "Cinnamon, clove", "Smoked vanilla, tonka"],
+  },
+  {
+    name: "Imperial Travancore Sandalwood",
+    family: "Oud & woods",
+    format: "50 ml Concentrated Attar",
+    price: 6200,
+    image: "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?auto=format&fit=crop&w=800&q=80",
+    notes: ["Sweet wood", "Sandalwood", "Earthy musk"],
+  },
+  {
+    name: "Monsoon Petrichor & Lotus",
+    family: "Fresh",
+    format: "100 ml Extrait de Parfum",
+    price: 3699,
+    image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=800&q=80",
+    notes: ["Rain accord, pink lotus", "Mitti, fresh moss", "Clean amber, driftwood"],
+  },
 ];
 
 const shopLocations = ["Kunnamkulam", "Thrissur", "Kuttippuram"];
@@ -33,7 +89,7 @@ function ArrowIcon() {
 }
 
 function App() {
-  const [activeFamily, setActiveFamily] = useState(fragranceFamilies[0]);
+  const [activeFamily, setActiveFamily] = useState(null);
   const [shopMode, setShopMode] = useState("Retail");
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -126,7 +182,7 @@ function App() {
                 <article
                   className="family-option"
                   key={family.name}
-                  data-selected={activeFamily.name === family.name}
+                  data-selected={activeFamily?.name === family.name}
                 >
                   <span className="family-option__index">{family.index}</span>
                   <span className="family-option__name">{family.name}</span>
@@ -134,10 +190,10 @@ function App() {
                   <button
                     className="family-option__select"
                     type="button"
-                    aria-pressed={activeFamily.name === family.name}
+                    aria-pressed={activeFamily?.name === family.name}
                     onClick={() => setActiveFamily(family)}
                   >
-                    {activeFamily.name === family.name ? "Selected" : "Explore family"}
+                    {activeFamily?.name === family.name ? "Selected" : "Explore family"}
                     <ArrowIcon />
                   </button>
                 </article>
@@ -147,47 +203,82 @@ function App() {
             <div className="collection-note" aria-live="polite">
               <span className="collection-note__rule" />
               <p>
-                <strong>{activeFamily.name}</strong>: {activeFamily.descriptor} Ask us about
-                the current selection.
+                {activeFamily ? (
+                  <>
+                    <strong>{activeFamily.name}</strong>: {activeFamily.descriptor} Showing
+                    matching prototype scents.
+                  </>
+                ) : (
+                  <>Showing all six prototype fragrance concepts.</>
+                )}
               </p>
-              <a className="text-link" href="#contact">
-                Ask about this family <ArrowIcon />
+              <a
+                className="text-link"
+                href="#products"
+                onClick={() => setActiveFamily(null)}
+              >
+                Show all scents <ArrowIcon />
               </a>
             </div>
           </div>
         </section>
 
-        <section className="story" aria-labelledby="story-title">
-          <div className="container story__inner">
-            <figure
-              className="story__photo"
-              data-slot="perfume-photo"
-              data-alt="A real Abeer perfume bottle photographed in soft natural light"
-            >
-              <img
-                src={`${import.meta.env.BASE_URL}images/fragrance-reference.jpg`}
-                width="1920"
-                height="1440"
-                alt="An unbranded ribbed glass perfume bottle with a dark cap on a pale shelf"
-                sizes="(min-width: 60rem) 50vw, 100vw"
-                loading="lazy"
-                onError={(event) => {
-                  event.currentTarget.closest("[data-slot]")?.remove();
-                }}
-              />
-            </figure>
-            <p className="story__caption">
-              A reference image, not a product listing.
-            </p>
-            <div className="story__copy">
-              <h2 id="story-title">The right scent is a feeling.</h2>
-              <p className="story__body">
-                Some days call for something light. Others linger a little longer. Begin
-                with what draws you in, then explore from there.
+        <section className="products section-pad" id="products" aria-labelledby="products-title">
+          <div className="container">
+            <div className="section-heading products__heading">
+              <div>
+                <h2 id="products-title">Sample fragrance range.</h2>
+              </div>
+              <p className="section-heading__aside">
+                Discover the perfume that feels like second nature and leaves an unforgettable impression.
               </p>
-              <a className="text-link" href="#collection">
-                Find your starting point <ArrowIcon />
-              </a>
+            </div>
+            <div className="product-grid" aria-live="polite">
+              {products
+                .filter((product) => !activeFamily || product.family === activeFamily.name)
+                .map((product) => (
+                  <article className="product-card" key={product.name}>
+                    <div className="product-card__visual">
+                      <img
+                        className="product-card__image"
+                        src={product.image}
+                        alt=""
+                        loading="lazy"
+                        onError={(event) => {
+                          event.currentTarget.remove();
+                        }}
+                      />
+                    </div>
+                    <div className="product-card__body">
+                      <span className="product-card__family">{product.family}</span>
+                      <h3 className="product-card__name">{product.name}</h3>
+                      <p className="product-card__format">{product.format}</p>
+                      <dl className="product-card__notes">
+                        {product.notes.map((note, index) => (
+                          <div key={note}>
+                            <dt>{["Opening", "Heart", "Base"][index]}</dt>
+                            <dd>{note}</dd>
+                          </div>
+                        ))}
+                      </dl>
+                      <div className="product-card__footer">
+                        <span className="product-card__price">
+                          ₹{product.price.toLocaleString("en-IN")}
+                        </span>
+                        <a
+                          className="text-link"
+                          href={`${whatsappUrl}?text=${encodeURIComponent(
+                            `Hi Abeer Perfumes, I’m interested in ${product.name}.`,
+                          )}`}
+                          target="_blank"
+                          rel="noreferrer"
+                        >
+                          Ask about this scent <ArrowIcon />
+                        </a>
+                      </div>
+                    </div>
+                  </article>
+                ))}
             </div>
           </div>
         </section>
@@ -322,10 +413,6 @@ function App() {
             <a href="#trade">Wholesale</a>
             <a href="#contact">Contact</a>
           </div>
-          <p className="footer__credit" data-credits>
-            Photographs: <a href="https://commons.wikimedia.org/wiki/File:Perfume_glass_bottle.jpg">Santeri Viinamäki</a>
-            (CC BY-SA 4.0, Wikimedia Commons)
-          </p>
           <p className="footer__copyright">© Abeer Perfumes</p>
         </div>
       </footer>

@@ -251,8 +251,6 @@ function PerfumeScene() {
     scene.add(createPedestal(paper, paperThree, accent));
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
-    let pointerX = 0;
-    let pointerY = 0;
     let frame = 0;
 
     const resize = () => {
@@ -265,16 +263,9 @@ function PerfumeScene() {
       renderer.render(scene, camera);
     };
 
-    const onPointerMove = (event) => {
-      const bounds = host.getBoundingClientRect();
-      pointerX = ((event.clientX - bounds.left) / bounds.width - 0.5) * 2;
-      pointerY = ((event.clientY - bounds.top) / bounds.height - 0.5) * 2;
-    };
-
     const renderFrame = (time = 0) => {
       if (!reduceMotion.matches) {
-        bottle.rotation.y = Math.sin(time * 0.00036) * 0.1 + pointerX * 0.045;
-        bottle.rotation.x = pointerY * -0.025;
+        bottle.rotation.y = Math.sin(time * 0.00036) * 0.1;
       } else {
         bottle.rotation.set(0, 0, 0);
       }
@@ -295,7 +286,6 @@ function PerfumeScene() {
     const onMotionChange = () => startAnimation();
     const resizeObserver = new ResizeObserver(resize);
     resizeObserver.observe(host);
-    host.addEventListener("pointermove", onPointerMove);
     reduceMotion.addEventListener("change", onMotionChange);
     resize();
     startAnimation();
@@ -303,7 +293,6 @@ function PerfumeScene() {
     return () => {
       window.cancelAnimationFrame(frame);
       resizeObserver.disconnect();
-      host.removeEventListener("pointermove", onPointerMove);
       reduceMotion.removeEventListener("change", onMotionChange);
       scene.traverse((object) => {
         if (object.geometry) object.geometry.dispose();

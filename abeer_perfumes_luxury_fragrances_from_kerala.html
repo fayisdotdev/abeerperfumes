@@ -1,0 +1,1312 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abeer Perfumes | Luxury Artisanal Fragrances of Kerala</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts: Playfair Display & Plus Jakarta Sans -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;0,900;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        emerald: {
+                            850: '#062d22',
+                            900: '#031e17',
+                            950: '#01120d',
+                        },
+                        gold: {
+                            100: '#fef3c7',
+                            300: '#fcd34d',
+                            400: '#fbbf24',
+                            500: '#d97706',
+                            600: '#b45309',
+                            700: '#92400e',
+                            light: '#f7e7ce',
+                            DEFAULT: '#d4af37',
+                            dark: '#aa820a'
+                        },
+                        velvet: {
+                            800: '#4a0e17',
+                            900: '#2d080e',
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    animation: {
+                        'float-slow': 'float 6s ease-in-out infinite',
+                        'float-medium': 'float 4s ease-in-out infinite',
+                        'pulse-glow': 'pulseGlow 3s ease-in-out infinite',
+                        'shimmer': 'shimmer 2.5s infinite linear',
+                        'mist': 'mistMove 12s ease-in-out infinite alternate',
+                    },
+                    keyframes: {
+                        float: {
+                            '0%, 100%': { transform: 'translateY(0px) rotate(0deg)' },
+                            '50%': { transform: 'translateY(-12px) rotate(2deg)' },
+                        },
+                        pulseGlow: {
+                            '0%, 100%': { opacity: '0.4', filter: 'drop-shadow(0 0 15px rgba(212,175,55,0.4))' },
+                            '50%': { opacity: '0.8', filter: 'drop-shadow(0 0 30px rgba(212,175,55,0.8))' },
+                        },
+                        shimmer: {
+                            '0%': { backgroundPosition: '-200% 0' },
+                            '100%': { backgroundPosition: '200% 0' },
+                        },
+                        mistMove: {
+                            '0%': { transform: 'scale(1) translate(0, 0)', opacity: '0.3' },
+                            '100%': { transform: 'scale(1.15) translate(-20px, -30px)', opacity: '0.6' }
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        /* Custom luxury scrollbar & subtle styles */
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #031e17;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #d4af37;
+            border-radius: 4px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: #fcd34d;
+        }
+        .gold-gradient-text {
+            background: linear-gradient(135deg, #FFF 0%, #FCD34D 40%, #D4AF37 70%, #92400E 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .gold-border-gradient {
+            border-image: linear-gradient(to right, #d4af37, #fef3c7, #aa820a) 1;
+        }
+        .glass-panel {
+            background: rgba(6, 45, 34, 0.75);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid rgba(212, 175, 55, 0.25);
+        }
+        .glass-panel-light {
+            background: rgba(255, 255, 255, 0.85);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(212, 175, 55, 0.3);
+        }
+        .hero-bg {
+            background: radial-gradient(circle at 50% 30%, #084031 0%, #031e17 65%, #01120d 100%);
+        }
+        .perfume-bottle-shadow {
+            filter: drop-shadow(0 25px 35px rgba(0, 0, 0, 0.7)) drop-shadow(0 0 25px rgba(212, 175, 55, 0.3));
+        }
+    </style>
+</head>
+<body class="bg-[#031e17] text-slate-100 font-sans selection:bg-gold-500 selection:text-emerald-950 overflow-x-hidden">
+
+    <!-- TOP ANNOUNCEMENT BAR -->
+    <div class="bg-gradient-to-r from-emerald-950 via-velvet-800 to-emerald-950 text-gold-100 text-xs py-2 px-4 text-center border-b border-gold-500/20 flex justify-between items-center px-6">
+        <span class="hidden md:inline-block text-gold-400/80"><i class="fa-solid fa-gem mr-1"></i> Royal Kerala Heritage Perfumery</span>
+        <p class="font-medium tracking-wide mx-auto md:mx-0">
+            ✨ Complimenting Pure Oud Sample with all orders over ₹3,999 | Express Shipping Across India
+        </p>
+        <span class="hidden md:inline-block text-gold-400/80"><i class="fa-solid fa-location-dot mr-1"></i> Kochi • Calicut • Trivandrum</span>
+    </div>
+
+    <!-- MAIN NAVBAR -->
+    <nav class="sticky top-0 z-40 bg-emerald-950/85 backdrop-blur-md border-b border-gold-500/20 transition-all duration-300" id="navbar">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex items-center justify-between h-20">
+                
+                <!-- Logo -->
+                <a href="#" class="flex items-center gap-3 group">
+                    <div class="w-10 h-10 rounded-full border border-gold-400/50 flex items-center justify-center bg-emerald-900/80 group-hover:border-gold-300 transition duration-300 shadow-[0_0_15px_rgba(212,175,55,0.2)]">
+                        <span class="font-serif text-xl font-bold gold-gradient-text">A</span>
+                    </div>
+                    <div class="flex flex-col">
+                        <span class="font-serif text-2xl font-bold tracking-widest text-white group-hover:text-gold-300 transition">ABEER</span>
+                        <span class="text-[9px] uppercase tracking-[0.3em] text-gold-400/90 -mt-1 font-semibold">Perfumes • Kerala</span>
+                    </div>
+                </a>
+
+                <!-- Desktop Navigation Links -->
+                <div class="hidden lg:flex items-center space-x-8 text-sm uppercase tracking-wider font-medium text-slate-200">
+                    <a href="#collections" class="hover:text-gold-300 transition hover:underline underline-offset-8 decoration-gold-500">Collections</a>
+                    <a href="#scent-quiz" class="hover:text-gold-300 transition hover:underline underline-offset-8 decoration-gold-500 flex items-center gap-1.5 text-gold-300">
+                        <i class="fa-solid fa-wand-magic-sparkles text-xs"></i> Scent Finder
+                    </a>
+                    <a href="#craftsmanship" class="hover:text-gold-300 transition hover:underline underline-offset-8 decoration-gold-500">Our Heritage</a>
+                    <a href="#notes-experience" class="hover:text-gold-300 transition hover:underline underline-offset-8 decoration-gold-500">Notes & Ingredients</a>
+                    <a href="#boutiques" class="hover:text-gold-300 transition hover:underline underline-offset-8 decoration-gold-500">Boutiques</a>
+                </div>
+
+                <!-- Action Icons (Search, Cart, Mobile Menu) -->
+                <div class="flex items-center space-x-5">
+                    <button onclick="toggleSearchModal()" class="text-slate-300 hover:text-gold-300 transition p-2" title="Search fragrances">
+                        <i class="fa-solid fa-magnifying-glass text-lg"></i>
+                    </button>
+                    
+                    <button onclick="toggleCartDrawer()" class="relative p-2 text-slate-300 hover:text-gold-300 transition" title="Shopping Cart">
+                        <i class="fa-solid fa-bag-shopping text-xl"></i>
+                        <span id="cart-badge" class="absolute -top-1 -right-1 bg-gold-500 text-emerald-950 font-bold text-[10px] w-5 h-5 rounded-full flex items-center justify-center shadow-lg transform transition scale-100">0</span>
+                    </button>
+
+                    <button onclick="toggleMobileMenu()" class="lg:hidden text-slate-200 hover:text-gold-300 p-2 focus:outline-none">
+                        <i class="fa-solid fa-bars-staggered text-2xl" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile Menu Drawer -->
+        <div id="mobile-menu" class="hidden lg:hidden bg-emerald-900/95 border-b border-gold-500/30 px-6 py-6 space-y-4">
+            <a href="#collections" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-gold-300 text-lg py-2 border-b border-emerald-800">Collections</a>
+            <a href="#scent-quiz" onclick="toggleMobileMenu()" class="block text-gold-300 font-semibold text-lg py-2 border-b border-emerald-800">✨ Find Your Signature Scent</a>
+            <a href="#craftsmanship" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-gold-300 text-lg py-2 border-b border-emerald-800">Kerala Spice Heritage</a>
+            <a href="#notes-experience" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-gold-300 text-lg py-2 border-b border-emerald-800">Notes & Ingredients</a>
+            <a href="#boutiques" onclick="toggleMobileMenu()" class="block text-slate-200 hover:text-gold-300 text-lg py-2">Boutique Locations</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <section class="relative min-h-[90vh] flex items-center hero-bg overflow-hidden py-12 lg:py-0">
+        <!-- Animated Background Particle Mist Elements -->
+        <div class="absolute inset-0 pointer-events-none overflow-hidden">
+            <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-gold-500/10 rounded-full filter blur-[100px] animate-mist"></div>
+            <div class="absolute bottom-1/3 right-1/4 w-[500px] h-[500px] bg-emerald-500/10 rounded-full filter blur-[120px] animate-mist" style="animation-delay: -5s;"></div>
+            <!-- Floating Kerala Botanicals (SVGs/Icons) -->
+            <div class="absolute top-20 left-[10%] text-gold-400/20 text-4xl animate-float-slow"><i class="fa-solid fa-leaf"></i></div>
+            <div class="absolute bottom-30 left-[15%] text-gold-300/15 text-3xl animate-float-medium" style="animation-delay: -2s;"><i class="fa-solid fa-spa"></i></div>
+            <div class="absolute top-40 right-[12%] text-gold-400/20 text-5xl animate-float-slow" style="animation-delay: -3s;"><i class="fa-solid fa-seedling"></i></div>
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Column: Hero Text & CTAs -->
+                <div class="lg:col-span-7 space-y-6 text-center lg:text-left pt-6 lg:pt-0">
+                    <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-gold-500/30 bg-gold-500/10 text-gold-300 text-xs uppercase tracking-widest font-semibold backdrop-blur-sm">
+                        <span class="w-2 h-2 rounded-full bg-gold-400 animate-ping"></span>
+                        Handcrafted Pure Artisanal Perfumery
+                    </div>
+
+                    <h1 class="font-serif text-4xl sm:text-5xl lg:text-6xl xl:text-7xl font-bold leading-tight text-white">
+                        The Essence of Kerala, <br/>
+                        <span class="gold-gradient-text italic font-normal">Crafted in Gold & Oud</span>
+                    </h1>
+
+                    <p class="text-slate-300 text-base sm:text-lg max-w-2xl mx-auto lg:mx-0 font-light leading-relaxed">
+                        Immerse your senses in rare Malabar spices, night-blooming jasmine, aged wild agarwood, and cool coastal vetiver. Distilled with centuries of royal spice route mastery.
+                    </p>
+
+                    <!-- CTAs -->
+                    <div class="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4">
+                        <a href="#collections" class="w-full sm:w-auto px-8 py-4 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-emerald-950 font-bold text-sm uppercase tracking-wider hover:brightness-110 transition shadow-[0_0_25px_rgba(212,175,55,0.4)] flex items-center justify-center gap-2 group">
+                            <span>Explore Collections</span>
+                            <i class="fa-solid fa-arrow-right text-xs group-hover:translate-x-1 transition"></i>
+                        </a>
+                        
+                        <a href="#scent-quiz" class="w-full sm:w-auto px-8 py-4 rounded-full border border-gold-400/40 bg-emerald-900/40 text-gold-200 hover:bg-emerald-800/60 font-semibold text-sm uppercase tracking-wider transition backdrop-blur-md flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-wand-magic-sparkles text-gold-400"></i>
+                            <span>Take Scent Quiz</span>
+                        </a>
+                    </div>
+
+                    <!-- Highlight Badges -->
+                    <div class="grid grid-cols-3 gap-4 pt-8 border-t border-gold-500/20 max-w-lg mx-auto lg:mx-0">
+                        <div class="text-center lg:text-left">
+                            <p class="font-serif text-2xl font-bold text-gold-300">100%</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider">Natural Oils</p>
+                        </div>
+                        <div class="text-center lg:text-left border-x border-gold-500/20 px-2">
+                            <p class="font-serif text-2xl font-bold text-gold-300">24+ Hrs</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider">Long Lasting</p>
+                        </div>
+                        <div class="text-center lg:text-left">
+                            <p class="font-serif text-2xl font-bold text-gold-300">Royal</p>
+                            <p class="text-xs text-slate-400 uppercase tracking-wider">Kannauj Steam</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column: Interactive 3D Bottle Visual & Interactive Hotspots -->
+                <div class="lg:col-span-5 relative flex justify-center">
+                    <!-- Glow Circle behind bottle -->
+                    <div class="absolute w-72 h-72 sm:w-96 sm:h-96 rounded-full bg-gold-500/20 filter blur-3xl animate-pulse-glow"></div>
+                    
+                    <!-- Decorative Golden Frame Ring -->
+                    <div class="relative w-80 h-96 sm:w-96 sm:h-[450px] rounded-t-full border border-gold-400/30 p-4 flex items-center justify-center bg-gradient-to-b from-gold-500/5 to-transparent">
+                        
+                        <!-- Main Featured Bottle Render Concept (SVG + Styling) -->
+                        <div class="relative z-10 w-full h-full flex flex-col items-center justify-center animate-float-slow cursor-pointer group" onclick="openQuickView(1)">
+                            
+                            <!-- Bottle SVG Custom Graphic -->
+                            <svg class="w-56 h-80 perfume-bottle-shadow transition duration-500 group-hover:scale-105" viewBox="0 0 200 300" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <!-- Cap -->
+                                <rect x="75" y="10" width="50" height="35" rx="4" fill="url(#goldGradientCap)" stroke="#D4AF37" stroke-width="2"/>
+                                <rect x="85" y="45" width="30" height="10" fill="#2d080e"/>
+                                <!-- Neck -->
+                                <rect x="80" y="55" width="40" height="15" fill="url(#goldGradient)" />
+                                <!-- Bottle Body -->
+                                <path d="M40 85 C40 70, 160 70, 160 85 L155 260 C155 275, 45 275, 45 260 Z" fill="url(#glassEmerald)" stroke="url(#goldBorder)" stroke-width="3"/>
+                                <!-- Liquid Inside -->
+                                <path d="M45 130 C70 120, 130 140, 155 130 L152 255 C152 268, 48 268, 48 255 Z" fill="url(#liquidGold)" opacity="0.85"/>
+                                <!-- Royal Label -->
+                                <rect x="60" y="140" width="80" height="90" rx="3" fill="#031e17" stroke="#D4AF37" stroke-width="1.5"/>
+                                <rect x="64" y="144" width="72" height="82" rx="2" fill="none" stroke="#D4AF37" stroke-dasharray="2 2"/>
+                                <text x="100" y="170" font-family="serif" font-size="12" fill="#FCD34D" text-anchor="middle" font-weight="bold">ABEER</text>
+                                <text x="100" y="185" font-family="sans-serif" font-size="6" fill="#FFF" text-anchor="middle" letter-spacing="2">ROYAL OUD</text>
+                                <text x="100" y="200" font-family="serif" font-size="7" fill="#D4AF37" text-anchor="middle" font-style="italic">De Malabar</text>
+                                <circle cx="100" cy="215" r="4" fill="#D4AF37"/>
+                                
+                                <!-- Gradients Definition -->
+                                <defs>
+                                    <linearGradient id="goldGradientCap" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0%" stop-color="#FEF3C7"/>
+                                        <stop offset="50%" stop-color="#D4AF37"/>
+                                        <stop offset="100%" stop-color="#92400E"/>
+                                    </linearGradient>
+                                    <linearGradient id="goldGradient" x1="0" y1="0" x2="1" y2="0">
+                                        <stop offset="0%" stop-color="#D4AF37"/>
+                                        <stop offset="100%" stop-color="#FCD34D"/>
+                                    </linearGradient>
+                                    <linearGradient id="glassEmerald" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0%" stop-color="#062d22" stop-opacity="0.95"/>
+                                        <stop offset="100%" stop-color="#01120d" stop-opacity="0.98"/>
+                                    </linearGradient>
+                                    <linearGradient id="liquidGold" x1="0" y1="0" x2="0" y2="1">
+                                        <stop offset="0%" stop-color="#FCD34D" stop-opacity="0.7"/>
+                                        <stop offset="100%" stop-color="#B45309" stop-opacity="0.9"/>
+                                    </linearGradient>
+                                    <linearGradient id="goldBorder" x1="0" y1="0" x2="1" y2="1">
+                                        <stop offset="0%" stop-color="#FCD34D"/>
+                                        <stop offset="50%" stop-color="#D4AF37"/>
+                                        <stop offset="100%" stop-color="#78350F"/>
+                                    </linearGradient>
+                                </defs>
+                            </svg>
+
+                            <!-- Hover Prompt -->
+                            <div class="mt-2 px-3 py-1 bg-emerald-950/90 rounded-full border border-gold-500/40 text-[11px] text-gold-300 font-medium tracking-wide shadow-lg flex items-center gap-1.5">
+                                <i class="fa-solid fa-eye text-xs"></i> Click to Inspect Notes
+                            </div>
+                        </div>
+
+                        <!-- Floating Note Badges around Bottle -->
+                        <div class="absolute -top-2 -left-4 glass-panel px-3 py-2 rounded-xl text-xs text-slate-200 border border-gold-500/30 animate-float-medium flex items-center gap-2">
+                            <span class="w-6 h-6 rounded-full bg-gold-500/20 text-gold-300 flex items-center justify-center text-xs"><i class="fa-solid fa-pepper-hot"></i></span>
+                            <div>
+                                <p class="text-[10px] text-gold-400 uppercase font-bold">Top Note</p>
+                                <p class="font-serif">Wayanad Cardamom</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute top-1/2 -right-8 glass-panel px-3 py-2 rounded-xl text-xs text-slate-200 border border-gold-500/30 animate-float-slow flex items-center gap-2" style="animation-delay: -1.5s;">
+                            <span class="w-6 h-6 rounded-full bg-gold-500/20 text-gold-300 flex items-center justify-center text-xs"><i class="fa-solid fa-spa"></i></span>
+                            <div>
+                                <p class="text-[10px] text-gold-400 uppercase font-bold">Heart Note</p>
+                                <p class="font-serif">Malabar Jasmine (Mulla)</p>
+                            </div>
+                        </div>
+
+                        <div class="absolute bottom-4 -left-6 glass-panel px-3 py-2 rounded-xl text-xs text-slate-200 border border-gold-500/30 animate-float-medium flex items-center gap-2" style="animation-delay: -3s;">
+                            <span class="w-6 h-6 rounded-full bg-gold-500/20 text-gold-300 flex items-center justify-center text-xs"><i class="fa-solid fa-tree"></i></span>
+                            <div>
+                                <p class="text-[10px] text-gold-400 uppercase font-bold">Base Note</p>
+                                <p class="font-serif">Aged Wild Assam Oud</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- FRAGRANCE COLLECTIONS SECTION -->
+    <section id="collections" class="py-24 bg-emerald-950 relative border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            
+            <!-- Section Header -->
+            <div class="text-center max-w-3xl mx-auto mb-12">
+                <span class="text-gold-400 font-medium text-xs uppercase tracking-[0.25em] block mb-2">Curated Artisanal Blends</span>
+                <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white">Signature Kerala Collections</h2>
+                <div class="w-24 h-0.5 bg-gradient-to-r from-transparent via-gold-400 to-transparent mx-auto my-4"></div>
+                <p class="text-slate-300 text-sm sm:text-base font-light">
+                    Every elixir is slow-matured in teakwood casks and hand-poured into lead-free crystal bottles with 24k gold leaf accents.
+                </p>
+            </div>
+
+            <!-- Filter Buttons -->
+            <div class="flex flex-wrap justify-center gap-2 sm:gap-4 mb-12" id="filter-buttons">
+                <button onclick="filterProducts('all')" class="filter-btn active px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider uppercase transition bg-gold-500 text-emerald-950 shadow-md">All Perfumes</button>
+                <button onclick="filterProducts('oud')" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider uppercase transition bg-emerald-900/60 text-slate-300 hover:text-gold-300 border border-gold-500/20">Royal Oud & Attars</button>
+                <button onclick="filterProducts('floral')" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider uppercase transition bg-emerald-900/60 text-slate-300 hover:text-gold-300 border border-gold-500/20">Malabar Florals</button>
+                <button onclick="filterProducts('spiced')" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider uppercase transition bg-emerald-900/60 text-slate-300 hover:text-gold-300 border border-gold-500/20">Spiced Warmth</button>
+                <button onclick="filterProducts('coastal')" class="filter-btn px-5 py-2.5 rounded-full text-xs sm:text-sm font-semibold tracking-wider uppercase transition bg-emerald-900/60 text-slate-300 hover:text-gold-300 border border-gold-500/20">Coastal Fresh</button>
+            </div>
+
+            <!-- Products Grid Container -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8" id="products-grid">
+                <!-- Dynamically Inserted Products via JavaScript -->
+            </div>
+
+        </div>
+    </section>
+
+    <!-- INTERACTIVE SCENT QUIZ SECTION ("Find Your Signature Scent") -->
+    <section id="scent-quiz" class="py-20 relative overflow-hidden bg-gradient-to-b from-emerald-950 via-emerald-900 to-emerald-950 border-y border-gold-500/20">
+        <!-- Background Ambient Design -->
+        <div class="absolute -right-20 top-10 w-80 h-80 bg-gold-500/10 rounded-full blur-3xl"></div>
+        <div class="absolute -left-20 bottom-10 w-80 h-80 bg-velvet-800/20 rounded-full blur-3xl"></div>
+
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="glass-panel rounded-3xl p-6 sm:p-10 border border-gold-500/30 shadow-2xl">
+                
+                <div class="text-center mb-8">
+                    <span class="inline-block px-3 py-1 rounded-full bg-gold-500/20 text-gold-300 text-xs font-semibold uppercase tracking-widest mb-2">Personalized Recommendation</span>
+                    <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Find Your Signature Kerala Scent</h2>
+                    <p class="text-slate-300 text-sm mt-2">Answer 3 quick questions to discover your ideal olfactory match.</p>
+                </div>
+
+                <!-- Quiz Progress Bar -->
+                <div class="w-full bg-emerald-950 rounded-full h-1.5 mb-8 overflow-hidden border border-gold-500/20">
+                    <div id="quiz-progress" class="bg-gradient-to-r from-gold-500 to-gold-300 h-full w-1/3 transition-all duration-500"></div>
+                </div>
+
+                <!-- Quiz Container -->
+                <div id="quiz-content" class="min-h-[280px] flex flex-col justify-between">
+                    <!-- Step Content will render dynamically via JS -->
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- KERALA HERITAGE & CRAFTSMANSHIP STORY -->
+    <section id="craftsmanship" class="py-24 bg-emerald-950 relative">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                
+                <!-- Left Visual Showcase -->
+                <div class="lg:col-span-6 relative">
+                    <div class="relative rounded-2xl overflow-hidden border border-gold-500/30 shadow-2xl group">
+                        <img src="https://images.unsplash.com/photo-1615397349754-cfa2066a298e?auto=format&fit=crop&w=1000&q=80" alt="Kerala Spice & Fragrance Heritage" class="w-full h-[450px] object-cover transition duration-700 group-hover:scale-105 filter brightness-90">
+                        <div class="absolute inset-0 bg-gradient-to-t from-emerald-950 via-emerald-950/40 to-transparent"></div>
+                        <div class="absolute bottom-6 left-6 right-6 p-4 glass-panel rounded-xl border border-gold-500/30">
+                            <p class="font-serif text-lg font-bold text-gold-300">Traditional Hydro-Distillation</p>
+                            <p class="text-xs text-slate-300 mt-1">Copper Deg & Bhapka slow extraction preserving raw plant essence.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Story Text -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-gold-400 font-semibold text-xs uppercase tracking-[0.2em]">Centuries of Trade & Essence</span>
+                    <h2 class="font-serif text-3xl sm:text-5xl font-bold text-white leading-tight">
+                        Born from the Historic Spice Ports of Malabar
+                    </h2>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                        Long before modern perfumery, Arab merchants and European explorers sailed to Kerala's coasts seeking green cardamom, black pepper, and precious sandalwood. Abeer Perfumes carries this regal legacy forward.
+                    </p>
+                    <p class="text-slate-300 text-sm sm:text-base leading-relaxed font-light">
+                        We ethically source wild vetiver from River Bharathapuzha, fresh night-blooming jasmine (*Mulla*) from local family farms in Palakkad, and rich aged agarwood from sustainable Assam plantations.
+                    </p>
+
+                    <!-- Feature Bullet Grid -->
+                    <div class="grid grid-cols-2 gap-4 pt-4">
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/20 text-gold-300 flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-leaf text-sm"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">100% Cruelty Free</h4>
+                                <p class="text-xs text-slate-400">Ethically harvested ingredients</p>
+                            </div>
+                        </div>
+                        <div class="flex items-start gap-3">
+                            <div class="w-8 h-8 rounded-lg bg-gold-500/20 text-gold-300 flex items-center justify-center shrink-0 mt-1"><i class="fa-solid fa-droplet text-sm"></i></div>
+                            <div>
+                                <h4 class="font-bold text-white text-sm">Extrait de Parfum</h4>
+                                <p class="text-xs text-slate-400">30%+ high oil concentration</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- INGREDIENTS & FRAGRANCE NOTES INTERACTIVE EXPLORER -->
+    <section id="notes-experience" class="py-20 bg-emerald-900/40 border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-gold-400 text-xs font-semibold uppercase tracking-widest block mb-2">Our Natural Palette</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Key Kerala Ingredients</h2>
+                <p class="text-slate-300 text-sm mt-2">Hover or tap on an ingredient to discover its sensory profile.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                
+                <!-- Card 1 -->
+                <div class="glass-panel p-6 rounded-2xl border border-gold-500/20 hover:border-gold-400/60 transition group cursor-pointer">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-300 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-pepper-hot"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Wayanad Cardamom</h3>
+                    <p class="text-xs text-gold-400 uppercase tracking-widest mb-3">Top Note • Warm Spice</p>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Hand-picked green cardamom pods from high-altitude Wayanad slopes. Gives an invigorating, spicy resinous sweetness to top accords.
+                    </p>
+                </div>
+
+                <!-- Card 2 -->
+                <div class="glass-panel p-6 rounded-2xl border border-gold-500/20 hover:border-gold-400/60 transition group cursor-pointer">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-300 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-spa"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Palakkad Mulla Jasmine</h3>
+                    <p class="text-xs text-gold-400 uppercase tracking-widest mb-3">Heart Note • Indolic Floral</p>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Harvested strictly before dawn when fragrance concentration peaks. Intensely intoxicating, creamy, and romantic floral richness.
+                    </p>
+                </div>
+
+                <!-- Card 3 -->
+                <div class="glass-panel p-6 rounded-2xl border border-gold-500/20 hover:border-gold-400/60 transition group cursor-pointer">
+                    <div class="w-12 h-12 rounded-xl bg-gold-500/15 text-gold-300 flex items-center justify-center text-2xl mb-4 group-hover:scale-110 transition">
+                        <i class="fa-solid fa-tree"></i>
+                    </div>
+                    <h3 class="font-serif text-xl font-bold text-white mb-2">Ramacham (Vetiver)</h3>
+                    <p class="text-xs text-gold-400 uppercase tracking-widest mb-3">Base Note • Earthy Cool</p>
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">
+                        Traditional cooling roots washed in backwater streams. Offers deep woody, damp earthy notes that calm and ground the senses.
+                    </p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- TESTIMONIALS & PRESS -->
+    <section class="py-24 bg-emerald-950 border-t border-gold-500/20 relative">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <span class="text-gold-400 text-xs uppercase tracking-[0.25em] font-semibold block mb-2">Royal Praise</span>
+            <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white mb-12">Loved by Connoisseurs</h2>
+
+            <!-- Testimonial Slider Container -->
+            <div class="relative glass-panel p-8 sm:p-12 rounded-3xl border border-gold-500/30 max-w-3xl mx-auto shadow-2xl">
+                <i class="fa-solid fa-quote-left text-4xl text-gold-500/30 absolute top-6 left-6"></i>
+                
+                <div id="testimonial-container" class="min-h-[160px] flex flex-col justify-center">
+                    <!-- Dynamic Testimonial Slide -->
+                </div>
+
+                <!-- Navigation Controls -->
+                <div class="flex items-center justify-center gap-4 mt-6">
+                    <button onclick="prevTestimonial()" class="w-9 h-9 rounded-full border border-gold-500/40 text-gold-300 hover:bg-gold-500 hover:text-emerald-950 transition flex items-center justify-center text-sm">
+                        <i class="fa-solid fa-chevron-left"></i>
+                    </button>
+                    <div id="testimonial-dots" class="flex gap-2"></div>
+                    <button onclick="nextTestimonial()" class="w-9 h-9 rounded-full border border-gold-500/40 text-gold-300 hover:bg-gold-500 hover:text-emerald-950 transition flex items-center justify-center text-sm">
+                        <i class="fa-solid fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- BOUTIQUES LOCATIONS SECTION -->
+    <section id="boutiques" class="py-20 bg-emerald-900/30 border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-gold-400 text-xs font-semibold uppercase tracking-widest block mb-2">Experience In Person</span>
+                <h2 class="font-serif text-3xl sm:text-4xl font-bold text-white">Our Flagship Boutiques</h2>
+                <p class="text-slate-300 text-sm mt-2">Visit our luxury scent bars for bespoke fragrance consultations.</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Kochi -->
+                <div class="bg-emerald-950 border border-gold-500/20 p-6 rounded-2xl hover:border-gold-400/50 transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-location-dot text-gold-400 text-xl"></i>
+                        <h3 class="font-serif text-xl font-bold text-white">Fort Kochi</h3>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                        Princess Street, Near Pepper House, Fort Kochi, Kerala - 682001
+                    </p>
+                    <p class="text-xs text-gold-300"><i class="fa-solid fa-clock mr-1"></i> Open Daily: 10:00 AM – 9:00 PM</p>
+                    <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-phone mr-1"></i> +91 484 2210 999</p>
+                </div>
+
+                <!-- Calicut -->
+                <div class="bg-emerald-950 border border-gold-500/20 p-6 rounded-2xl hover:border-gold-400/50 transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-location-dot text-gold-400 text-xl"></i>
+                        <h3 class="font-serif text-xl font-bold text-white">Kozhikode</h3>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                        Beach Road Heritage Boulevard, Kozhikode, Kerala - 6730012
+                    </p>
+                    <p class="text-xs text-gold-300"><i class="fa-solid fa-clock mr-1"></i> Open Daily: 10:30 AM – 9:30 PM</p>
+                    <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-phone mr-1"></i> +91 495 2760 888</p>
+                </div>
+
+                <!-- Trivandrum -->
+                <div class="bg-emerald-950 border border-gold-500/20 p-6 rounded-2xl hover:border-gold-400/50 transition">
+                    <div class="flex items-center gap-3 mb-4">
+                        <i class="fa-solid fa-location-dot text-gold-400 text-xl"></i>
+                        <h3 class="font-serif text-xl font-bold text-white">Trivandrum</h3>
+                    </div>
+                    <p class="text-xs text-slate-300 leading-relaxed mb-4">
+                        Kowdiar Royal Promenade, Thiruvananthapuram, Kerala - 695003
+                    </p>
+                    <p class="text-xs text-gold-300"><i class="fa-solid fa-clock mr-1"></i> Open Daily: 10:00 AM – 9:00 PM</p>
+                    <p class="text-xs text-slate-400 mt-1"><i class="fa-solid fa-phone mr-1"></i> +91 471 2310 777</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- NEWSLETTER SIGNUP -->
+    <section class="py-16 bg-gradient-to-r from-velvet-900 via-emerald-950 to-velvet-900 border-t border-gold-500/30">
+        <div class="max-w-4xl mx-auto px-4 text-center">
+            <span class="text-gold-300 text-xs font-semibold uppercase tracking-widest block mb-2">Join The Royal Circle</span>
+            <h2 class="font-serif text-3xl font-bold text-white mb-3">Receive 15% Off Your First Bottle</h2>
+            <p class="text-slate-300 text-sm mb-6 max-w-xl mx-auto">Subscribe for private launch invitations, olfactory stories, and exclusive gift sets.</p>
+            
+            <form onsubmit="handleNewsletter(event)" class="flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
+                <input type="email" required placeholder="Enter your email address" class="px-5 py-3.5 rounded-full bg-emerald-900/80 border border-gold-500/40 text-white placeholder-slate-400 focus:outline-none focus:border-gold-300 text-sm flex-1">
+                <button type="submit" class="px-7 py-3.5 rounded-full bg-gradient-to-r from-gold-500 to-gold-400 text-emerald-950 font-bold text-xs uppercase tracking-wider hover:brightness-110 transition shadow-lg shrink-0">
+                    Subscribe
+                </button>
+            </form>
+            <p id="newsletter-msg" class="text-xs text-gold-300 mt-3 hidden"></p>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="bg-emerald-950 text-slate-400 text-xs py-16 border-t border-gold-500/20">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 grid grid-cols-1 md:grid-cols-4 gap-10">
+            
+            <!-- Brand Info -->
+            <div class="space-y-4">
+                <a href="#" class="flex items-center gap-2">
+                    <span class="font-serif text-2xl font-bold gold-gradient-text">ABEER</span>
+                </a>
+                <p class="text-slate-400 leading-relaxed">
+                    Artisanal luxury perfumery hand-crafted in God's Own Country. Blending ancient Kerala botanicals with imperial oriental oud.
+                </p>
+                <div class="flex space-x-4 text-slate-300 text-base">
+                    <a href="#" class="hover:text-gold-300 transition"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#" class="hover:text-gold-300 transition"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="#" class="hover:text-gold-300 transition"><i class="fa-brands fa-youtube"></i></a>
+                    <a href="#" class="hover:text-gold-300 transition"><i class="fa-brands fa-pinterest"></i></a>
+                </div>
+            </div>
+
+            <!-- Quick Links -->
+            <div>
+                <h4 class="font-serif text-white font-bold text-sm tracking-wider uppercase mb-4 text-gold-400">Collections</h4>
+                <ul class="space-y-2">
+                    <li><a href="#collections" class="hover:text-gold-300 transition">Royal Oud Collection</a></li>
+                    <li><a href="#collections" class="hover:text-gold-300 transition">Malabar Blossom Attars</a></li>
+                    <li><a href="#collections" class="hover:text-gold-300 transition">Coastal Breeze Eau de Parfum</a></li>
+                    <li><a href="#collections" class="hover:text-gold-300 transition">Spice Route Elixirs</a></li>
+                    <li><a href="#collections" class="hover:text-gold-300 transition">Discovery Sample Box</a></li>
+                </ul>
+            </div>
+
+            <!-- Perfumery Craft -->
+            <div>
+                <h4 class="font-serif text-white font-bold text-sm tracking-wider uppercase mb-4 text-gold-400">About Abeer</h4>
+                <ul class="space-y-2">
+                    <li><a href="#craftsmanship" class="hover:text-gold-300 transition">Kerala Spice Heritage</a></li>
+                    <li><a href="#notes-experience" class="hover:text-gold-300 transition">Sustainable Sourcing</a></li>
+                    <li><a href="#boutiques" class="hover:text-gold-300 transition">Boutique Appointments</a></li>
+                    <li><a href="#" class="hover:text-gold-300 transition">Corporate Gifting</a></li>
+                    <li><a href="#" class="hover:text-gold-300 transition">Custom Wedding Attars</a></li>
+                </ul>
+            </div>
+
+            <!-- Customer Care -->
+            <div>
+                <h4 class="font-serif text-white font-bold text-sm tracking-wider uppercase mb-4 text-gold-400">Client Services</h4>
+                <p class="mb-2"><i class="fa-solid fa-envelope text-gold-400 mr-2"></i> concierge@abeerperfumes.com</p>
+                <p class="mb-2"><i class="fa-solid fa-phone text-gold-400 mr-2"></i> +91 484 290 1122</p>
+                <p class="text-slate-400">Mon - Sat: 9:00 AM - 7:00 PM IST</p>
+                <div class="mt-4 pt-4 border-t border-emerald-900 flex items-center gap-2 text-xs">
+                    <i class="fa-solid fa-shield-halved text-gold-400"></i>
+                    <span>100% Authentic Guaranteed</span>
+                </div>
+            </div>
+
+        </div>
+
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 pt-6 border-t border-emerald-900 text-center flex flex-col sm:flex-row justify-between items-center text-xs text-slate-500">
+            <p>© 2026 Abeer Perfumes Kerala Pvt Ltd. All Rights Reserved.</p>
+            <div class="flex space-x-6 mt-4 sm:mt-0">
+                <a href="#" class="hover:text-slate-300">Privacy Policy</a>
+                <a href="#" class="hover:text-slate-300">Terms of Service</a>
+                <a href="#" class="hover:text-slate-300">Shipping Policy</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- CART DRAWER SLIDE-OVER -->
+    <div id="cart-drawer-overlay" onclick="toggleCartDrawer()" class="fixed inset-0 bg-black/70 backdrop-blur-sm z-50 opacity-0 pointer-events-none transition-opacity duration-300"></div>
+    <div id="cart-drawer" class="fixed top-0 right-0 h-full w-full sm:w-[420px] bg-emerald-950 border-l border-gold-500/30 shadow-2xl z-50 transform translate-x-full transition-transform duration-300 flex flex-col">
+        
+        <!-- Drawer Header -->
+        <div class="p-6 border-b border-gold-500/20 flex items-center justify-between bg-emerald-900/50">
+            <div class="flex items-center gap-2">
+                <i class="fa-solid fa-bag-shopping text-gold-400 text-lg"></i>
+                <h3 class="font-serif text-xl font-bold text-white">Your Fragrance Bag</h3>
+            </div>
+            <button onclick="toggleCartDrawer()" class="text-slate-400 hover:text-white p-2">
+                <i class="fa-solid fa-xmark text-xl"></i>
+            </button>
+        </div>
+
+        <!-- Free Gift Sample Progress Bar -->
+        <div class="bg-emerald-900/80 px-6 py-3 border-b border-gold-500/20 text-xs">
+            <div class="flex justify-between text-slate-300 mb-1.5">
+                <span>Free Pure Oud Sample Progress:</span>
+                <span id="sample-progress-text" class="text-gold-300 font-bold">Add ₹3,999 for Gift</span>
+            </div>
+            <div class="w-full bg-emerald-950 rounded-full h-2 overflow-hidden border border-gold-500/20">
+                <div id="sample-progress-bar" class="bg-gold-400 h-full w-0 transition-all duration-300"></div>
+            </div>
+        </div>
+
+        <!-- Cart Items List -->
+        <div id="cart-items" class="flex-1 overflow-y-auto p-6 space-y-4">
+            <!-- Rendered dynamically -->
+        </div>
+
+        <!-- Cart Footer -->
+        <div class="p-6 border-t border-gold-500/20 bg-emerald-900/30 space-y-4">
+            <div class="space-y-2 text-sm">
+                <div class="flex justify-between text-slate-300">
+                    <span>Subtotal</span>
+                    <span id="cart-subtotal" class="font-semibold text-white">₹0</span>
+                </div>
+                <div class="flex justify-between text-slate-300">
+                    <span>Express Shipping (India)</span>
+                    <span class="text-gold-400 font-medium">FREE</span>
+                </div>
+                <div class="flex justify-between text-lg font-serif font-bold text-white pt-2 border-t border-gold-500/20">
+                    <span>Total Amount</span>
+                    <span id="cart-total" class="gold-gradient-text">₹0</span>
+                </div>
+            </div>
+
+            <button onclick="simulateCheckout()" class="w-full py-4 rounded-full bg-gradient-to-r from-gold-500 via-gold-400 to-gold-600 text-emerald-950 font-bold text-sm uppercase tracking-wider hover:brightness-110 transition shadow-[0_0_20px_rgba(212,175,55,0.3)]">
+                Proceed to Checkout
+            </button>
+        </div>
+    </div>
+
+    <!-- QUICK VIEW PRODUCT MODAL -->
+    <div id="quick-view-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-center justify-center p-4">
+        <div class="relative w-full max-w-3xl glass-panel rounded-3xl border border-gold-500/40 p-6 sm:p-8 overflow-hidden max-h-[90vh] overflow-y-auto">
+            <button onclick="closeQuickView()" class="absolute top-4 right-4 text-slate-400 hover:text-white w-8 h-8 rounded-full bg-emerald-900/80 flex items-center justify-center">
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div id="quick-view-content" class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+                <!-- Content Populated via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- SEARCH MODAL -->
+    <div id="search-modal" class="fixed inset-0 z-50 bg-black/80 backdrop-blur-md hidden flex items-start justify-center pt-24 px-4">
+        <div class="relative w-full max-w-2xl glass-panel rounded-2xl border border-gold-500/40 p-6">
+            <div class="flex items-center gap-3 border-b border-gold-500/30 pb-4">
+                <i class="fa-solid fa-magnifying-glass text-gold-400 text-lg"></i>
+                <input type="text" id="search-input" onkeyup="handleSearch()" placeholder="Search by name, note (e.g. Cardamom, Oud, Jasmine)..." class="bg-transparent border-none text-white placeholder-slate-400 focus:outline-none w-full text-base">
+                <button onclick="toggleSearchModal()" class="text-slate-400 hover:text-white"><i class="fa-solid fa-xmark"></i></button>
+            </div>
+            <div id="search-results" class="mt-4 max-h-80 overflow-y-auto space-y-2">
+                <p class="text-xs text-slate-400 text-center py-4">Start typing to search luxury fragrances...</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- NOTIFICATION TOAST -->
+    <div id="toast" class="fixed bottom-6 right-6 z-50 glass-panel border border-gold-400 px-5 py-3.5 rounded-2xl shadow-2xl text-xs font-semibold text-gold-200 transform translate-y-20 opacity-0 transition-all duration-300 flex items-center gap-3">
+        <i class="fa-solid fa-circle-check text-gold-400 text-base"></i>
+        <span id="toast-msg">Item added to bag!</span>
+    </div>
+
+    <!-- JAVASCRIPT LOGIC & STATE -->
+    <script>
+        // DATA SET: PRODUCTS
+        const products = [
+            {
+                id: 1,
+                name: "Abeer Royal Oud De Malabar",
+                category: "oud",
+                price: 5499,
+                rating: 4.9,
+                reviewsCount: 128,
+                volume: "100 ml Extrait de Parfum",
+                tag: "Best Seller",
+                image: "https://images.unsplash.com/photo-1594035910387-fea47794261f?auto=format&fit=crop&w=600&q=80",
+                description: "Our crown jewel. Rich Assam agarwood infused with Malabar cardamom and golden amber. Matured in royal teak barrels for 120 days.",
+                topNotes: "Wayanad Cardamom, Saffron",
+                heartNotes: "Palakkad Jasmine, Rose Damascena",
+                baseNotes: "Aged Assam Oud, Sandalwood"
+            },
+            {
+                id: 2,
+                name: "Mulla Nights (Night Jasmine)",
+                category: "floral",
+                price: 3899,
+                rating: 4.8,
+                reviewsCount: 94,
+                volume: "100 ml Extrait de Parfum",
+                tag: "Floral Elegance",
+                image: "https://images.unsplash.com/photo-1523293182086-7651a899d37f?auto=format&fit=crop&w=600&q=80",
+                description: "Capturing the romantic breeze of midnight gardens in Kerala. Intoxicating night-blooming jasmine layered with velvety musk.",
+                topNotes: "Green Tea Leaves, Bergamot",
+                heartNotes: "Palakkad Night Jasmine, Tuberose",
+                baseNotes: "White Musk, Soft Sandalwood"
+            },
+            {
+                id: 3,
+                name: "Ramacham Coastal Breeze",
+                category: "coastal",
+                price: 3499,
+                rating: 4.7,
+                reviewsCount: 76,
+                volume: "100 ml Extrait de Parfum",
+                tag: "Fresh Signature",
+                image: "https://images.unsplash.com/photo-1541643600914-78b084683601?auto=format&fit=crop&w=600&q=80",
+                description: "An invigorating blend inspired by the Malabar coastline. Cool river vetiver (Ramacham) intertwined with ocean spray and citrus notes.",
+                topNotes: "Kochi Sea Salt, Pink Grapefruit",
+                heartNotes: "Cool Ramacham Vetiver, Neroli",
+                baseNotes: "Cedarwood, Liquid Amber"
+            },
+            {
+                id: 4,
+                name: "Wayanad Spice Route",
+                category: "spiced",
+                price: 4299,
+                rating: 4.9,
+                reviewsCount: 110,
+                volume: "100 ml Extrait de Parfum",
+                tag: "Warm Spice",
+                image: "https://images.unsplash.com/photo-1588405748880-12d1d2a59f75?auto=format&fit=crop&w=600&q=80",
+                description: "An intoxicating tribute to ancient spice trade routes. Warm black pepper, cinnamon bark, and smoked vanilla pods.",
+                topNotes: "Black Pepper, Nutmeg",
+                heartNotes: "Cinnamon Bark, Clove Blossom",
+                baseNotes: "Smoked Vanilla, Tonka Bean"
+            },
+            {
+                id: 5,
+                name: "Imperial Travancore Sandalwood",
+                category: "oud",
+                price: 6200,
+                rating: 5.0,
+                reviewsCount: 82,
+                volume: "50 ml Concentrated Attar",
+                tag: "Pure Attar",
+                image: "https://images.unsplash.com/photo-1616949755610-8c9bbc08f138?auto=format&fit=crop&w=600&q=80",
+                description: "Pure hydro-distilled Travancore sandalwood oil without alcohol. Silky, woody, serene, and infinitely enduring.",
+                topNotes: "Sweet Wood",
+                heartNotes: "Pure Sandalwood Extract",
+                baseNotes: "Creamy Earthy Musk"
+            },
+            {
+                id: 6,
+                name: "Monsoon Petrichor & Lotus",
+                category: "coastal",
+                price: 3699,
+                rating: 4.8,
+                reviewsCount: 65,
+                volume: "100 ml Extrait de Parfum",
+                tag: "Limited Edition",
+                image: "https://images.unsplash.com/photo-1592945403244-b3fbafd7f539?auto=format&fit=crop&w=600&q=80",
+                description: "The divine scent of first rain falling on dry earth in Kerala backwaters. Earthy baked clay and pink water lotus.",
+                topNotes: "Rain Accord, Pink Lotus",
+                heartNotes: "Mitti (Geosmin), Fresh Moss",
+                baseNotes: "Clean Amber, Driftwood"
+            }
+        ];
+
+        // TESTIMONIALS DATA
+        const testimonials = [
+            {
+                quote: "Abeer's Royal Oud De Malabar is unlike any fragrance I've worn in Dubai or Paris. The way Wayanad cardamom weaves into aged agarwood is sheer mastery.",
+                author: "Dr. Vikram Seth",
+                location: "Kochi, Kerala",
+                rating: 5
+            },
+            {
+                quote: "Mulla Nights takes me straight to warm evenings in my ancestral courtyard in Calicut. Soft, royal, and stays on my silk sarees all day.",
+                author: "Ananya Nair",
+                location: "Trivandrum",
+                rating: 5
+            },
+            {
+                quote: "The Ramacham Coastal Breeze is my everyday signature. Fresh, woody, and perfectly balanced for humid Indian weather.",
+                author: "Rohan K. Varma",
+                location: "Bengaluru",
+                rating: 5
+            }
+        ];
+
+        // QUIZ DATA
+        const quizQuestions = [
+            {
+                question: "What vibe defines your ideal day?",
+                options: [
+                    { label: "Unwinding at a luxury palace overlooking backwaters", category: "oud" },
+                    { label: "Strolling through a blooming jasmine garden at dusk", category: "floral" },
+                    { label: "Enjoying the fresh sea breeze on Fort Kochi beach", category: "coastal" },
+                    { label: "Sipping warm spiced tea on a misty hill estate", category: "spiced" }
+                ]
+            },
+            {
+                question: "Which sensory note intrigues you most?",
+                options: [
+                    { label: "Deep Smokey Oud & Sandalwood", category: "oud" },
+                    { label: "Sweet Night-blooming Jasmine", category: "floral" },
+                    { label: "Cool Earthy Vetiver & Ocean Salt", category: "coastal" },
+                    { label: "Warm Cardamom & Black Pepper", category: "spiced" }
+                ]
+            },
+            {
+                question: "How do you prefer your fragrance projection?",
+                options: [
+                    { label: "Bold & Imperial — Leaves a long luxurious trail", category: "oud" },
+                    { label: "Intimate & Romantic — Soft and comforting", category: "floral" },
+                    { label: "Crisp & Energizing — Fresh and uplifting", category: "coastal" },
+                    { label: "Rich & Exotic — Mysterious and complex", category: "spiced" }
+                ]
+            }
+        ];
+
+        // STATE MANAGEMENT
+        let cart = [];
+        let currentQuizStep = 0;
+        let quizAnswers = [];
+        let currentTestimonialIndex = 0;
+
+        // INITIALIZATION
+        window.addEventListener('DOMContentLoaded', () => {
+            renderProducts(products);
+            renderTestimonial(0);
+            renderQuizStep();
+        });
+
+        // RENDER PRODUCTS
+        function renderProducts(items) {
+            const grid = document.getElementById('products-grid');
+            grid.innerHTML = items.map(p => `
+                <div class="glass-panel rounded-2xl overflow-hidden border border-gold-500/20 hover:border-gold-400/60 transition-all duration-300 flex flex-col justify-between group shadow-lg">
+                    <div class="relative overflow-hidden cursor-pointer" onclick="openQuickView(${p.id})">
+                        <img src="${p.image}" alt="${p.name}" class="w-full h-64 object-cover transition duration-500 group-hover:scale-105 filter brightness-95">
+                        <span class="absolute top-3 left-3 bg-emerald-950/90 border border-gold-500/40 text-gold-300 text-[10px] uppercase font-bold px-3 py-1 rounded-full backdrop-blur-md">
+                            ${p.tag}
+                        </span>
+                        <button onclick="event.stopPropagation(); openQuickView(${p.id})" class="absolute bottom-3 right-3 bg-gold-500 text-emerald-950 w-9 h-9 rounded-full flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300 shadow-md hover:scale-110">
+                            <i class="fa-solid fa-eye text-xs"></i>
+                        </button>
+                    </div>
+
+                    <div class="p-5 flex-1 flex flex-col justify-between space-y-3">
+                        <div>
+                            <div class="flex items-center justify-between text-xs text-gold-400 mb-1">
+                                <span class="font-medium">${p.volume}</span>
+                                <span><i class="fa-solid fa-star text-gold-400 mr-1"></i>${p.rating}</span>
+                            </div>
+                            <h3 class="font-serif text-lg font-bold text-white group-hover:text-gold-300 transition line-clamp-1">${p.name}</h3>
+                            <p class="text-xs text-slate-300 line-clamp-2 mt-1 font-light">${p.description}</p>
+                        </div>
+
+                        <!-- Notes Summary Bar -->
+                        <div class="bg-emerald-900/40 p-2 rounded-lg text-[11px] text-slate-300 border border-emerald-800">
+                            <span class="text-gold-300 font-semibold">Notes:</span> ${p.topNotes.split(',')[0]} • ${p.heartNotes.split(',')[0]}
+                        </div>
+
+                        <div class="flex items-center justify-between pt-2 border-t border-emerald-800">
+                            <div>
+                                <span class="text-xs text-slate-400 block -mb-1">Price</span>
+                                <span class="font-serif text-lg font-bold gold-gradient-text">₹${p.price.toLocaleString('en-IN')}</span>
+                            </div>
+
+                            <button onclick="addToCart(${p.id})" class="px-4 py-2.5 rounded-full bg-gradient-to-r from-gold-500 to-gold-400 text-emerald-950 font-bold text-xs uppercase tracking-wider hover:brightness-110 transition shadow-md flex items-center gap-1.5">
+                                <i class="fa-solid fa-bag-shopping"></i> Add
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            `).join('');
+        }
+
+        // FILTER PRODUCTS
+        function filterProducts(category) {
+            document.querySelectorAll('.filter-btn').forEach(btn => {
+                btn.classList.remove('bg-gold-500', 'text-emerald-950');
+                btn.classList.add('bg-emerald-900/60', 'text-slate-300');
+            });
+            event.target.classList.remove('bg-emerald-900/60', 'text-slate-300');
+            event.target.classList.add('bg-gold-500', 'text-emerald-950');
+
+            if (category === 'all') {
+                renderProducts(products);
+            } else {
+                const filtered = products.filter(p => p.category === category);
+                renderProducts(filtered);
+            }
+        }
+
+        // CART LOGIC
+        function addToCart(productId) {
+            const product = products.find(p => p.id === productId);
+            const existing = cart.find(item => item.id === productId);
+
+            if (existing) {
+                existing.quantity += 1;
+            } else {
+                cart.push({ ...product, quantity: 1 });
+            }
+
+            updateCartUI();
+            showToast(`Added "${product.name}" to your bag.`);
+        }
+
+        function updateQuantity(productId, delta) {
+            const item = cart.find(i => i.id === productId);
+            if (item) {
+                item.quantity += delta;
+                if (item.quantity <= 0) {
+                    cart = cart.filter(i => i.id !== productId);
+                }
+            }
+            updateCartUI();
+        }
+
+        function updateCartUI() {
+            const totalItems = cart.reduce((sum, item) => sum + item.quantity, 0);
+            const subtotal = cart.reduce((sum, item) => sum + (item.price * item.quantity), 0);
+
+            // Badge
+            document.getElementById('cart-badge').innerText = totalItems;
+
+            // Render Cart Items
+            const itemsContainer = document.getElementById('cart-items');
+            if (cart.length === 0) {
+                itemsContainer.innerHTML = `
+                    <div class="text-center py-12 text-slate-400">
+                        <i class="fa-solid fa-bag-shopping text-4xl text-emerald-800 mb-3"></i>
+                        <p class="text-sm">Your fragrance bag is empty.</p>
+                    </div>
+                `;
+            } else {
+                itemsContainer.innerHTML = cart.map(item => `
+                    <div class="flex items-center gap-4 bg-emerald-900/40 p-3 rounded-xl border border-gold-500/20">
+                        <img src="${item.image}" alt="${item.name}" class="w-16 h-16 object-cover rounded-lg border border-gold-500/30">
+                        <div class="flex-1">
+                            <h4 class="font-serif text-sm font-bold text-white line-clamp-1">${item.name}</h4>
+                            <p class="text-xs text-gold-300 font-semibold">₹${item.price.toLocaleString('en-IN')}</p>
+                            
+                            <div class="flex items-center gap-3 mt-2">
+                                <button onclick="updateQuantity(${item.id}, -1)" class="w-6 h-6 rounded bg-emerald-800 text-slate-200 text-xs hover:bg-gold-500 hover:text-emerald-950 font-bold">-</button>
+                                <span class="text-xs text-white font-bold">${item.quantity}</span>
+                                <button onclick="updateQuantity(${item.id}, 1)" class="w-6 h-6 rounded bg-emerald-800 text-slate-200 text-xs hover:bg-gold-500 hover:text-emerald-950 font-bold">+</button>
+                            </div>
+                        </div>
+                    </div>
+                `).join('');
+            }
+
+            // Totals
+            document.getElementById('cart-subtotal').innerText = `₹${subtotal.toLocaleString('en-IN')}`;
+            document.getElementById('cart-total').innerText = `₹${subtotal.toLocaleString('en-IN')}`;
+
+            // Sample Gift Bar (₹3,999 target)
+            const target = 3999;
+            const progress = Math.min((subtotal / target) * 100, 100);
+            document.getElementById('sample-progress-bar').style.width = `${progress}%`;
+            
+            const textElem = document.getElementById('sample-progress-text');
+            if (subtotal >= target) {
+                textElem.innerText = "✨ Unlocked Pure Oud Sample!";
+                textElem.classList.add('text-gold-300');
+            } else {
+                const diff = target - subtotal;
+                textElem.innerText = `Add ₹${diff.toLocaleString('en-IN')} for Gift`;
+            }
+        }
+
+        function toggleCartDrawer() {
+            const drawer = document.getElementById('cart-drawer');
+            const overlay = document.getElementById('cart-drawer-overlay');
+            
+            const isOpen = !drawer.classList.contains('translate-x-full');
+            if (isOpen) {
+                drawer.classList.add('translate-x-full');
+                overlay.classList.add('opacity-0', 'pointer-events-none');
+            } else {
+                drawer.classList.remove('translate-x-full');
+                overlay.classList.remove('opacity-0', 'pointer-events-none');
+            }
+        }
+
+        // QUICK VIEW MODAL
+        function openQuickView(productId) {
+            const p = products.find(item => item.id === productId);
+            const modal = document.getElementById('quick-view-modal');
+            const content = document.getElementById('quick-view-content');
+
+            content.innerHTML = `
+                <div class="relative">
+                    <img src="${p.image}" alt="${p.name}" class="w-full h-80 object-cover rounded-2xl border border-gold-500/30">
+                    <span class="absolute top-3 left-3 bg-emerald-950/90 border border-gold-500/40 text-gold-300 text-xs uppercase font-bold px-3 py-1 rounded-full">
+                        ${p.tag}
+                    </span>
+                </div>
+
+                <div class="space-y-4">
+                    <div>
+                        <span class="text-xs text-gold-400 font-semibold uppercase tracking-widest">${p.volume}</span>
+                        <h3 class="font-serif text-2xl font-bold text-white mt-1">${p.name}</h3>
+                        <div class="flex items-center gap-2 mt-1">
+                            <div class="text-gold-400 text-xs">
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                                <i class="fa-solid fa-star"></i>
+                            </div>
+                            <span class="text-xs text-slate-300">(${p.reviewsCount} customer reviews)</span>
+                        </div>
+                    </div>
+
+                    <p class="text-slate-300 text-xs sm:text-sm leading-relaxed">${p.description}</p>
+
+                    <!-- Fragrance Pyramid Accord breakdown -->
+                    <div class="space-y-2 bg-emerald-950/80 p-4 rounded-xl border border-gold-500/20 text-xs">
+                        <p><strong class="text-gold-400">Top Notes:</strong> ${p.topNotes}</p>
+                        <p><strong class="text-gold-400">Heart Notes:</strong> ${p.heartNotes}</p>
+                        <p><strong class="text-gold-400">Base Notes:</strong> ${p.baseNotes}</p>
+                    </div>
+
+                    <div class="flex items-center justify-between pt-2">
+                        <span class="font-serif text-2xl font-bold gold-gradient-text">₹${p.price.toLocaleString('en-IN')}</span>
+                        <button onclick="addToCart(${p.id}); closeQuickView();" class="px-6 py-3 rounded-full bg-gradient-to-r from-gold-500 to-gold-400 text-emerald-950 font-bold text-xs uppercase tracking-wider hover:brightness-110 transition shadow-lg">
+                            Add To Bag
+                        </button>
+                    </div>
+                </div>
+            `;
+
+            modal.classList.remove('hidden');
+        }
+
+        function closeQuickView() {
+            document.getElementById('quick-view-modal').classList.add('hidden');
+        }
+
+        // SCENT QUIZ LOGIC
+        function renderQuizStep() {
+            const container = document.getElementById('quiz-content');
+            const progress = document.getElementById('quiz-progress');
+
+            if (currentQuizStep < quizQuestions.length) {
+                const q = quizQuestions[currentQuizStep];
+                progress.style.width = `${((currentQuizStep + 1) / 3) * 100}%`;
+
+                container.innerHTML = `
+                    <div class="space-y-6">
+                        <p class="text-xs text-gold-400 font-bold uppercase tracking-widest">Question ${currentQuizStep + 1} of 3</p>
+                        <h3 class="font-serif text-xl sm:text-2xl font-bold text-white">${q.question}</h3>
+                        
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                            ${q.options.map((opt, idx) => `
+                                <button onclick="selectQuizOption('${opt.category}')" class="p-4 rounded-xl bg-emerald-950/80 border border-gold-500/30 hover:border-gold-300 text-left text-xs sm:text-sm text-slate-200 hover:text-gold-300 transition flex items-center justify-between group">
+                                    <span>${opt.label}</span>
+                                    <i class="fa-solid fa-chevron-right text-xs opacity-0 group-hover:opacity-100 transition text-gold-400"></i>
+                                </button>
+                            `).join('')}
+                        </div>
+                    </div>
+                `;
+            } else {
+                // Quiz Complete - Recommend Product
+                const counts = {};
+                quizAnswers.forEach(cat => counts[cat] = (counts[cat] || 0) + 1);
+                const recommendedCategory = Object.keys(counts).reduce((a, b) => counts[a] > counts[b] ? a : b, 'oud');
+                const recommendedProduct = products.find(p => p.category === recommendedCategory) || products[0];
+
+                progress.style.width = '100%';
+
+                container.innerHTML = `
+                    <div class="text-center space-y-4 py-4">
+                        <div class="inline-block p-3 rounded-full bg-gold-500/20 text-gold-300 text-2xl mb-1">
+                            <i class="fa-solid fa-wand-magic-sparkles"></i>
+                        </div>
+                        <h3 class="font-serif text-2xl font-bold text-white">Your Perfume Match</h3>
+                        <p class="text-xs text-slate-300 max-w-md mx-auto">Based on your olfactory choices, we recommend this signature fragrance crafted for your aura:</p>
+
+                        <div class="glass-panel p-4 rounded-2xl border border-gold-400 max-w-md mx-auto flex items-center gap-4 text-left">
+                            <img src="${recommendedProduct.image}" alt="${recommendedProduct.name}" class="w-20 h-20 object-cover rounded-xl border border-gold-500/30">
+                            <div>
+                                <span class="text-[10px] text-gold-400 font-bold uppercase tracking-wider">${recommendedProduct.tag}</span>
+                                <h4 class="font-serif font-bold text-white text-base">${recommendedProduct.name}</h4>
+                                <p class="text-xs text-gold-300 font-bold">₹${recommendedProduct.price.toLocaleString('en-IN')}</p>
+                                <button onclick="addToCart(${recommendedProduct.id})" class="mt-2 px-4 py-1.5 rounded-full bg-gold-500 text-emerald-950 font-bold text-[11px] uppercase tracking-wider">
+                                    Add Signature Match
+                                </button>
+                            </div>
+                        </div>
+
+                        <button onclick="resetQuiz()" class="text-xs text-slate-400 underline hover:text-gold-300 mt-2">Retake Quiz</button>
+                    </div>
+                `;
+            }
+        }
+
+        function selectQuizOption(category) {
+            quizAnswers.push(category);
+            currentQuizStep++;
+            renderQuizStep();
+        }
+
+        function resetQuiz() {
+            currentQuizStep = 0;
+            quizAnswers = [];
+            renderQuizStep();
+        }
+
+        // TESTIMONIAL SLIDER LOGIC
+        function renderTestimonial(index) {
+            const t = testimonials[index];
+            const container = document.getElementById('testimonial-container');
+            
+            container.innerHTML = `
+                <p class="font-serif text-lg sm:text-2xl text-slate-100 italic leading-relaxed mb-6">"${t.quote}"</p>
+                <div>
+                    <h4 class="font-bold text-gold-300 text-base">${t.author}</h4>
+                    <p class="text-xs text-slate-400">${t.location}</p>
+                </div>
+            `;
+
+            // Dots
+            const dotsContainer = document.getElementById('testimonial-dots');
+            dotsContainer.innerHTML = testimonials.map((_, i) => `
+                <span onclick="setTestimonial(${i})" class="w-2.5 h-2.5 rounded-full cursor-pointer transition ${i === index ? 'bg-gold-400 w-6' : 'bg-emerald-800'}"></span>
+            `).join('');
+        }
+
+        function nextTestimonial() {
+            currentTestimonialIndex = (currentTestimonialIndex + 1) % testimonials.length;
+            renderTestimonial(currentTestimonialIndex);
+        }
+
+        function prevTestimonial() {
+            currentTestimonialIndex = (currentTestimonialIndex - 1 + testimonials.length) % testimonials.length;
+            renderTestimonial(currentTestimonialIndex);
+        }
+
+        function setTestimonial(i) {
+            currentTestimonialIndex = i;
+            renderTestimonial(i);
+        }
+
+        // SEARCH MODAL LOGIC
+        function toggleSearchModal() {
+            const modal = document.getElementById('search-modal');
+            modal.classList.toggle('hidden');
+            if (!modal.classList.contains('hidden')) {
+                document.getElementById('search-input').focus();
+            }
+        }
+
+        function handleSearch() {
+            const query = document.getElementById('search-input').value.toLowerCase();
+            const resultsContainer = document.getElementById('search-results');
+
+            if (!query) {
+                resultsContainer.innerHTML = `<p class="text-xs text-slate-400 text-center py-4">Start typing to search luxury fragrances...</p>`;
+                return;
+            }
+
+            const matches = products.filter(p => 
+                p.name.toLowerCase().includes(query) || 
+                p.description.toLowerCase().includes(query) ||
+                p.topNotes.toLowerCase().includes(query) ||
+                p.baseNotes.toLowerCase().includes(query)
+            );
+
+            if (matches.length === 0) {
+                resultsContainer.innerHTML = `<p class="text-xs text-slate-400 text-center py-4">No scents found matching "${query}".</p>`;
+            } else {
+                resultsContainer.innerHTML = matches.map(p => `
+                    <div onclick="openQuickView(${p.id}); toggleSearchModal();" class="flex items-center gap-4 p-3 hover:bg-emerald-900/60 rounded-xl cursor-pointer transition">
+                        <img src="${p.image}" class="w-12 h-12 object-cover rounded-lg border border-gold-500/30">
+                        <div>
+                            <h4 class="font-serif font-bold text-white text-sm">${p.name}</h4>
+                            <p class="text-xs text-gold-300">₹${p.price.toLocaleString('en-IN')}</p>
+                        </div>
+                    </div>
+                `).join('');
+            }
+        }
+
+        // MOBILE MENU TOGGLE
+        function toggleMobileMenu() {
+            const menu = document.getElementById('mobile-menu');
+            menu.classList.toggle('hidden');
+        }
+
+        // NEWSLETTER SUBMIT
+        function handleNewsletter(e) {
+            e.preventDefault();
+            const msg = document.getElementById('newsletter-msg');
+            msg.innerText = "✨ Welcome to The Royal Circle! Check your email for your 15% discount code.";
+            msg.classList.remove('hidden');
+            e.target.reset();
+        }
+
+        // SIMULATE CHECKOUT
+        function simulateCheckout() {
+            if (cart.length === 0) {
+                showToast("Your bag is empty!");
+                return;
+            }
+            alert("✨ Order Simulation: Thank you for selecting Abeer Perfumes Kerala! Directing to secure Indian payment gateway (UPI / Cards / NetBanking).");
+            cart = [];
+            updateCartUI();
+            toggleCartDrawer();
+        }
+
+        // TOAST NOTIFICATION
+        function showToast(message) {
+            const toast = document.getElementById('toast');
+            document.getElementById('toast-msg').innerText = message;
+            toast.classList.remove('translate-y-20', 'opacity-0');
+            
+            setTimeout(() => {
+                toast.classList.add('translate-y-20', 'opacity-0');
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
